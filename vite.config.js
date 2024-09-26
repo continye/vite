@@ -8,10 +8,4 @@ export default defineConfig({
             // strictPort:true
             open:"index.html"
         },
-  plugins: [],
-  define: {
-    "process.env": {
-      DASHSCOPE_API_KEY: process.env.DASHSCOPE_API_KEY,
-    },
-  },
 });
