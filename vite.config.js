@@ -3,21 +3,11 @@ import { defineConfig } from "vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/vite.github.io',
-  server: {
-    host: "0.0.0.0",
-    hmr: true,
-    proxy: {
-      "/compatible-mode/v1": {
-        target: "https://dashscope.aliyuncs.com",
-        changeOrigin: true,
-        secure: false,
-      },
-    },
-    // 屏蔽命令窗口的文件访问限制警告
-    fs: {
-      strict: false,
-    },
-  },
+ server:{
+            // port:3000,
+            // strictPort:true
+            open:"index.html"
+        },
   plugins: [],
   define: {
     "process.env": {
